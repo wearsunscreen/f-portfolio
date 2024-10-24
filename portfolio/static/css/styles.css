@@ -38,3 +38,14 @@ body {
 .nav__link--inactive {
     color:gray;
 }
+
+.main {
+    margin: 0 auto;
+}
+
+.main--about {
+    max-width: 500px;
+    padding: 0 1rem;
+    line-height: 150%;
+}
+
