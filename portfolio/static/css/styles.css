@@ -41,12 +41,16 @@ body {
 
 .main {
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin 0 auto;
 }
 
 .main--about {
     max-width: 500px;
     padding: 0 1rem;
     line-height: 150%;
+    flex-direction: column;
 }
 
 .contact {
@@ -143,4 +147,60 @@ body {
 /* Utility class to remove link styles */
 .u-bare-link {
     text-decoration: none;
+}
+
+.hero {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.project {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+.project__content {
+    margin-bottom: 1rem;
+    line-height: 150%;
+    flex: 65;
+    margin-right: 3rem;
+    padding: 0;
+}
+
+@media (min-width: 49em) {
+    .project {
+        flex-direction: row;
+        padding: 0;
+    }
+}
+
+.project__heading {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 150%;
+}
+
+.project__heading--meta {
+    font-size: inherit;
+    margin-bottom: 1rem;
+}
+
+.project__meta-group {
+    margin-bottom: 1rem;
+}
+
+.project__meta-group, .cta {
+    padding: 1rem;
+    background-color: #d4eafa;
+    border-radius: 6px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
