@@ -1,11 +1,11 @@
-*, 
+*,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: Lato, "san-serif";
+    font-family: Lato, "san-serif";
 }
 
 body {
@@ -36,7 +36,7 @@ body {
 }
 
 .nav__link--inactive {
-    color:gray;
+    color: gray;
 }
 
 .main {
@@ -49,3 +49,98 @@ body {
     line-height: 150%;
 }
 
+.contact {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contact__details {
+    margin-left: 1ch;
+}
+
+.contact__link {
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 2px 0 0 #4cafda;
+}
+
+.contact__link:hover {
+    text-decoration: none;
+    color: #4cafda;
+    box-shadow: 0 2px 0 0 black;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1.25rem;
+    justify-content: center;
+    justify-items: center;
+    max-width: 22rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 49em) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 45rem;
+    }
+}
+
+.project-card__image {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card__meta {
+    padding: 0 1.25rem;
+    font-size: 1rem;
+    line-height: 2.25rem;
+    color: #1c2023
+}
+
+.project-card:hover .project-card__image {
+    transform: translateY(-0.5rem);
+    
+}
+
+.project-card__name {
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+.project-card:hover .project-card__name {
+    text-decoration: underline;
+}
+
+.categories {
+    display: flex;
+    padding: 0;
+    margin: 0 0 0;
+    color: teal;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.075rem;
+}
+
+.categories__tag:not(:last-of-type)::after {
+    content: "•";
+    margin: 0 0.5rem;
+}
+
+@media (min-width: 70em) {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 68rem;
+    }
+}
+
+/* Utility class to remove link styles */
+.u-bare-link {
+    text-decoration: none;
+}
