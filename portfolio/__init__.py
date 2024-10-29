@@ -5,12 +5,13 @@ app = Flask(__name__, static_folder="static", template_folder="templates")
 
 projects = [
     {
-        "name": "Habit tracking app with Python and MongoDB",
-        "thumb": "img/habit-tracking.png",
-        "hero": "img/habit-tracking-hero.png",
-        "categories": ["python", "web"],
-        "slug": "habit-tracking",
-        "prod": "https://udemy.com",
+        "name": "Learn vi by playing classic video games",
+        "thumb": "img/vipleT.png",
+        "hero": "img/viple.png",
+        "categories": ["Go", "WebAsm", "GameDev"],
+        "slug": "viple",
+        "prod": "https://johncrane.dev/viple/viple_play.html",
+        "github": "https://github.com/wearsunscreen/viple"
     },
     {
         "name": "Personal finance tracking app with React",
