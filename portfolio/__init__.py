@@ -14,6 +14,15 @@ projects = [
         "github": "https://github.com/wearsunscreen/viple",
     },
     {
+        "name": "Flask Portfolio",
+        "thumb": "img/portfolioT.png",
+        "hero": "img/portfolio.png",
+        "categories": ["Python", "Flask" "CSS"],
+        "slug": "portfolio",
+        "prod": "https://johncrane.dev/",
+        "github": "https://github.com/wearsunscreen/portfolio-flask",
+    },
+    {
         "name": "Flying Lines",
         "thumb": "img/linesT.png",
         "hero": "img/lines.png",

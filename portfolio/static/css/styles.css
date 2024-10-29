@@ -48,7 +48,7 @@ body {
 
 .main--about,
 .main--error {
-    max-width: 500px;
+    max-width: 600px;
     padding: 0 1rem;
     line-height: 150%;
     flex-direction: column;
