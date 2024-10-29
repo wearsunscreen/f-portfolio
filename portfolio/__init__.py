@@ -8,23 +8,41 @@ projects = [
         "name": "Learn vi by playing classic video games",
         "thumb": "img/vipleT.png",
         "hero": "img/viple.png",
-        "categories": ["Go", "WebAsm", "GameDev"],
+        "categories": ["Go", "WebAsm" "Ebiten"],
         "slug": "viple",
         "prod": "https://johncrane.dev/viple/viple_play.html",
-        "github": "https://github.com/wearsunscreen/viple"
+        "github": "https://github.com/wearsunscreen/viple",
     },
     {
-        "name": "Personal finance tracking app with React",
-        "thumb": "img/personal-finance.png",
-        "hero": "img/personal-finance.png",
-        "categories": ["react", "javascript"],
-        "slug": "personal-finance",
+        "name": "Flying Lines",
+        "thumb": "img/linesT.png",
+        "hero": "img/lines.png",
+        "categories": ["Elm", "SVG", "Web"],
+        "prod": "https://johncrane.dev/lines.html",
+        "slug": "lines",
     },
     {
-        "name": "REST API Documentation with Postman and Swagger",
-        "thumb": "img/rest-api-docs.png",
-        "hero": "img/rest-api-docs.png",
-        "categories": ["writing"],
+        "name": "Perfect Flood",
+        "thumb": "img/floodT.png",
+        "hero": "img/flood.png",
+        "categories": ["Elm", "Web", "GameDev"],
+        "slug": "flood",
+        "prod": "https://johncrane.dev/flood/flood.html",
+    },
+    {
+        "name": "Portmanteau Quiz",
+        "thumb": "img/portmanteauT.png",
+        "hero": "img/portmanteau.png",
+        "categories": ["Elm", "Web", "GameDev"],
+        "prod": "https://johncrane.dev/portmanteau/portmanteau.html",
+        "slug": "portmanteau",
+    },
+    {
+        "name": "What Year Was It?",
+        "thumb": "img/yearT.png",
+        "hero": "img/year.png",
+        "categories": ["Elm", "Web", "GameDev"],
+        "prod": "https://johncrane.dev/yearof.html",
         "slug": "api-docs",
     },
 ]
@@ -52,6 +70,7 @@ def project(slug):
     if slug not in slug_to_project:
         abort(404)
     return render_template(f"project_{slug}.html", project=slug_to_project[slug])
+
 
 @app.errorhandler(404)
 def page_not_found(e):

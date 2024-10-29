@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="main main--project">
+    <div>
+        <img class="hero" src="{{ url_for('static', filename=project['hero']) }}"
+            alt="A hand holding a pen, about to write something in a project planner." />
+
+        <article class="project">
+            <article class="project__content">
+                <h2 class="project__heading">{{ project['name'] }}</h2>
+                <p>
+                    Ever wonder how they make those flying lines on the screensaver? This web app
+                    will show you. Tinker with the parameters.
+                </p>
+                <p>
+                    I have a <a href="https://www.youtube.com/watch?v=Pw-HWqvULTU">video explaining the algorithm</a> on my YouTube channel. 
+                </p>
+            </article>
+
+            <section>
+                <article class="project__meta-group">
+                    <h3 class="project__heading project__heading--meta">Technologies used</h3>
+
+                    <ul class="technology-list">
+                        {% for category in project['categories'] %}
+                        <li class="technology-list__item">{{ category }}</li>
+                        {% endfor %}
+                    </ul>
+                </article>
+
+                <a class="cta" href="{{ project['prod'] }}">
+                    <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                    View in production
+                </a>
+            </section>
+        </article>
+    </div>
+</main>
+{% endblock %}
