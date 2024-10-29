@@ -11,7 +11,7 @@ projects = [
         "categories": ["Go", "WebAsm" "Ebiten"],
         "slug": "viple",
         "prod": "https://johncrane.dev/viple/viple_play.html",
-        "github": "https://github.com/wearsunscreen/viple",
+        "repository": "https://github.com/wearsunscreen/viple",
     },
     {
         "name": "Flask Portfolio",
@@ -20,7 +20,7 @@ projects = [
         "categories": ["Python", "Flask" "CSS"],
         "slug": "portfolio",
         "prod": "https://johncrane.dev/",
-        "github": "https://github.com/wearsunscreen/portfolio-flask",
+        "repository": "https://github.com/wearsunscreen/portfolio-flask",
     },
     {
         "name": "Flying Lines",
@@ -29,6 +29,7 @@ projects = [
         "categories": ["Elm", "SVG", "Web"],
         "prod": "https://johncrane.dev/lines.html",
         "slug": "lines",
+        "repository": "https://gitlab.com/johncrane/gengarden-lines",
     },
     {
         "name": "Perfect Flood",
@@ -37,6 +38,7 @@ projects = [
         "categories": ["Elm", "Web", "GameDev"],
         "slug": "flood",
         "prod": "https://johncrane.dev/flood/flood.html",
+        "repository": "https://gitlab.com/johncrane/perfect-flood",
     },
     {
         "name": "Portmanteau Quiz",
@@ -45,6 +47,7 @@ projects = [
         "categories": ["Elm", "Web", "GameDev"],
         "prod": "https://johncrane.dev/portmanteau/portmanteau.html",
         "slug": "portmanteau",
+        "repository": "https://github.com/wearsunscreen/Portmanteau",
     },
     {
         "name": "What Year Was It?",
@@ -53,6 +56,7 @@ projects = [
         "categories": ["Elm", "Web", "GameDev"],
         "prod": "https://johncrane.dev/yearof.html",
         "slug": "api-docs",
+        "repository": "https://github.com/wearsunscreen/Year-Of-Quiz",
     },
 ]
 
